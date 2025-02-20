@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>함수의 기초 10</title>
 </head>
 <body>
-    처음 테스트
-    <h3>새로 했지롱</h3>
-    <div>
-        업데이트
-    </div>
+    <script>
+        //매게변수느 없어도 되고 쉼표로 여러개 적기 가능 
+        // function showError(){
+        //     alert('에러가 발생했습니다.');
+        // }
+        // showError();
+
+        //매개변수가 있는 함수
+
+        // function sayHello(name){
+        //     const msg = `안녕하세요, ${name}님!`;
+        //     console.log(msg);
+        // }
+
+        // sayHello('홍길동');
+        // sayHello('박수정 + 이순신');
+        // sayHello('김길자');
+
+        function sayHello(name){
+            let msg = `안녕하세요`;
+            if(name) {
+                msg += name;
+            }
+            console.log(msg);
+        }
+
+        sayHello();
+    </script>
 </body>
 </html>
